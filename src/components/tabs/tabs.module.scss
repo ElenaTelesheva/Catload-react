@@ -1,0 +1,32 @@
+$orange: #ff655b;
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+
+  &__btn {
+    width: 50%;
+    display: flex;
+    height: 3em;
+    background-color: white;
+    color: $orange;
+    border: 2px solid $orange;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+
+    &--active {
+      background: linear-gradient(to right, #fd297b, #ff655b);
+      color: white;
+    }
+
+    &:first-child {
+      border-radius: 50px 0 0 50px;
+    }
+
+    &:last-child {
+      border-radius: 0 50px 50px 0;
+    }
+  }
+}
